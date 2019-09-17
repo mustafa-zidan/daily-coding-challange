@@ -1,2 +1,2 @@
-# daily-coding-challange
-# daily-coding-challange
+# Daily Coding Challange
+Go implementation for Daily Coding Challange book
