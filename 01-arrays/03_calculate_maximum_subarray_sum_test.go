@@ -1,8 +1,9 @@
 package arrays
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMaxSubarraySum(t *testing.T) {
