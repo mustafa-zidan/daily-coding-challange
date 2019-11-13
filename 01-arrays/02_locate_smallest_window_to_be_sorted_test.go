@@ -22,11 +22,11 @@ func TestSmallestSortedWindow(t *testing.T) {
 	start, end = smallestSortedWindow(input)
 	assert.Equal(t, -1, start)
 	assert.Equal(t, -1, end)
-	// case 4 inversed
+	// case 4 reversed
 	input = []int{7, 6, 5, 4, 3, 2, 1, 0}
 	start, end = smallestSortedWindow(input)
 	assert.Equal(t, 0, start)
-	assert.Equal(t, 8, end)
+	assert.Equal(t, 7, end)
 	// case 5 Empty
 	input = make([]int, 0)
 	start, end = smallestSortedWindow(input)
