@@ -1,8 +1,6 @@
 package arrays
 
-import (
-	"fmt"
-)
+import "github.com/mustafa-zidan/daily-coding-chalange/utils"
 
 // Given an array of integers that is out of order,
 // determine the bounds of that smallest window that
@@ -16,33 +14,18 @@ func smallestSortedWindow(a []int) (int, int) {
 	start, end := len(a)-1, 0
 	for i := 0; i < len(a)-1; i++ {
 		if a[i] > a[i+1] {
-			start = min(start, i)
-			end = max(i+1, end)
+			start = utils.Min(start, i)
+			end = utils.Max(i+1, end)
 		} else if a[i] < a[start] {
-			end = max(i, end)
+			end = utils.Max(i, end)
 		}
 	}
 	if a[len(a)-1] < a[start] {
 		end = len(a) - 1
 	}
 	// check if result contains all values
-	fmt.Printf("\t\tstart: %d, end: %d, input %v\n", start, end, a)
 	if start > end {
 		return -1, -1
 	}
 	return start, end
-}
-
-func max(i, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}
-
-func min(i, j int) int {
-	if i < j {
-		return i
-	}
-	return j
 }
