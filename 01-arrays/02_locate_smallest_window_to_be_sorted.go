@@ -1,6 +1,6 @@
 package arrays
 
-import "github.com/mustafa-zidan/daily-coding-chalange/utils"
+import "daily-coding-chalange/utils"
 
 // Given an array of integers that is out of order,
 // determine the bounds of that smallest window that

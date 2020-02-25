@@ -1,4 +1,4 @@
-module github.com/mustafa-zidan/daily-coding-chalange
+module daily-coding-chalange
 
 go 1.13
 

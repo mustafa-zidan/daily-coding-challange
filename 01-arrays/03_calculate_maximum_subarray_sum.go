@@ -1,6 +1,6 @@
 package arrays
 
-import "github.com/mustafa-zidan/daily-coding-chalange/utils"
+import "daily-coding-chalange/utils"
 
 // Given an array of numbers, find the maximum
 // sum of any contiguous subarray of the array,
