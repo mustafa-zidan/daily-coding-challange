@@ -8,6 +8,6 @@ import (
 
 func TestFindAnagramIndicies(t *testing.T) {
 	w, s, expected := "ab", "abxaba", []int{0, 3, 4}
-	output := findAnagramIndicies(w, s)
+	output := findAnagramIndicies(s, w)
 	assert.Equal(t, expected, output)
 }
