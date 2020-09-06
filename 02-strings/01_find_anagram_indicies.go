@@ -1,7 +1,5 @@
 package strings
 
-import "fmt"
-
 // Given a word w and string s, find all indecies in s which are the starting locations
 // of anagrams of w.
 
@@ -14,7 +12,6 @@ func findAnagramIndicies(s, w string) []int {
 	for _, c := range w {
 		wHash += 1 << uint(c-'a')
 	}
-	fmt.Printf("wordHash: %v\n", wHash)
 	start, end, window := 0, 0, len(w)-1
 	for end < len(s) {
 		windowHash += 1 << (s[end] - 'a')
