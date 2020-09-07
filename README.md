@@ -22,3 +22,10 @@ Go implementation for Daily Coding Challange book
 -   [Add two Linked Lists Representing Numbers](03-linked_lists/02-add_two_linked_lists_representing_numbers.go)
 -   [rearrange Linked List To Alternate High/Low](03-linked_lists/03-rearrange_linked_list_to_alternate_high_low.go)
 -   [Find Intersecting Nodes of Linked Lists](03-linked_lists/04-find_intersecting_nodes_of_linked_lists.go)
+
+## Chapter 4: Stacks and Queues
+
+-   [Implement Max Stack](04-stacks-and-queues/01-implement_max_stack.go)
+-   [Determine whether Brackets are Balanced](04-stacks-and-queues/02-determine_whether_brackets_are_balanced.go)
+-   [Compute Maximum of K-Length Subarrays](04-stacks-and-queues/03-compute_maximum_of_k_length_subarrays.go)
+-   [Reconstruct array using +/- signs](04-stacks-and-queues/04-reconstruct_array_using_signs.go)
