@@ -6,7 +6,7 @@ package arrays
 // original input array
 
 // Time O(N logN) Space O(N)
-func smallerCount(a []int) []int {
+func smallestCount(a []int) []int {
 	seen := make([]int, 1)
 	seen[0], a[len(a)-1] = a[len(a)-1], 0
 	for i := len(a) - 2; i >= 0; i-- {
@@ -36,7 +36,7 @@ func getElementIndex(a []int, e int) int {
 }
 
 // Time O(n^2) Space O(1)
-func smallerCountBrute(a []int) []int {
+func smallestCountBrute(a []int) []int {
 	for i := 0; i < len(a); i++ {
 		count := 0
 		for j := i + 1; j < len(a); j++ {

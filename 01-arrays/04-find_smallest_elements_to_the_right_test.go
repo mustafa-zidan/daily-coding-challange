@@ -7,40 +7,40 @@ import (
 	"github.com/stretchr/testify/suite"
 )
 
-type SmallerCountSuite struct {
+type SmallestCountSuite struct {
 	suite.Suite
 }
 
 // In order for 'go test' to run this suite, we need to create
 // a normal test function and pass our suite to suite.Run
-func TestSmallerCount(t *testing.T) {
-	suite.Run(t, new(SmallerCountSuite))
+func TestSmallestCount(t *testing.T) {
+	suite.Run(t, new(SmallestCountSuite))
 }
 
-func (suite *SmallerCountSuite) TestSmallerCount() {
+func (suite *SmallestCountSuite) TestSmallestCount() {
 	// Example 1
 	input := []int{3, 4, 9, 6, 1}
-	output := smallerCount(input)
+	output := smallestCount(input)
 	assert.Equal(suite.T(), []int{1, 1, 2, 1, 0}, output)
 }
 
-func (suite *SmallerCountSuite) TestSmallerCountBrute() {
+func (suite *SmallestCountSuite) TestSmallestCountBrute() {
 	// Example 1
 	input := []int{3, 4, 9, 6, 1}
-	output := smallerCountBrute(input)
+	output := smallestCountBrute(input)
 	assert.Equal(suite.T(), []int{1, 1, 2, 1, 0}, output)
 }
 
-func BenchmarkSmallerCount(b *testing.B) {
+func BenchmarkSmallestCount(b *testing.B) {
 	input := []int{3, 4, 9, 6, 1}
 	for i := 0; i < b.N; i++ {
-		smallerCount(input)
+		smallestCount(input)
 	}
 }
 
-func BenchmarkSmallerCountBrute(b *testing.B) {
+func BenchmarkSmallestCountBrute(b *testing.B) {
 	input := []int{3, 4, 9, 6, 1}
 	for i := 0; i < b.N; i++ {
-		smallerCountBrute(input)
+		smallestCountBrute(input)
 	}
 }

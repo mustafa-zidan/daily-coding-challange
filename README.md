@@ -6,7 +6,7 @@ Go implementation for Daily Coding Challange book
 
 -   [Product of Other Elements](01-arrays/01-product_of_other-elments.go)
 -   [Locate Smallest Window to be Sorted](01-arrays/02-locate_smallest_window_to_be_sorted.go)
--   [Calculate Max Sub Array Sum](01-arrays/03-calculate_max_sub_array_sum.go)
+-   [Calculate Max Sub Array Sum](01-arrays/03-calculate_maximum_subarray_sum.go)
 -   [Find Smallest Element to the Right](01-arrays/04-find_smallest_element_to_the_right.go)
 
 ## Chapter 2: Strings
