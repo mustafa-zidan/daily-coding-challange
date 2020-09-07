@@ -3,7 +3,7 @@ package arrays
 import "daily-coding-chalange/utils"
 
 // Given an array of numbers, find the maximum
-// sum of any contiguous subarray of the array,
+// sum of any contiguous subarray of the array
 
 func maxSubarraySum(a []int) int {
 	max, maxSoFar := 0, 0

@@ -10,7 +10,7 @@ func findAnagramIndicies(s, w string) []int {
 	wHash, windowHash, result := 0, 0, make([]int, 0)
 	// calculate w hash
 	for _, c := range w {
-		wHash += 1 << uint(c-'a')
+		wHash += 1 << (c - 'a')
 	}
 	start, end, window := 0, 0, len(w)-1
 	for end < len(s) {
@@ -24,7 +24,7 @@ func findAnagramIndicies(s, w string) []int {
 		if windowHash == wHash {
 			result = append(result, start)
 		}
-		windowHash -= 1 << uint(s[start]-'a')
+		windowHash -= 1 << (s[start] - 'a')
 		start++
 		end++
 	}
